@@ -3,25 +3,207 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Bán Căn Hộ Võ Đình</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bán căn hộ Võ Đình, p.Thới An, TPHCM - Chính chủ bán</title>
+
     <style>
+        :root {
+            --primary: #0f172a;
+            --accent: #22c55e;
+            --highlight: #f97316;
+            --bg: #f1f5f9;
+            --text: #1e293b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
         body {
-            font-family: sans-serif;
-            text-align: center;
-            padding: 50px;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
         }
 
-        img {
-            max-width: 80%;
-            border-radius: 10px;
+        /* HEADER */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: white;
+            padding: 12px 20px;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+            z-index: 999;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
-        .btn {
-            background: #28a745;
-            color: white;
-            padding: 15px 25px;
+        header a {
             text-decoration: none;
-            border-radius: 5px;
+            color: inherit;
+        }
+
+        header a:hover {
+            opacity: 0.7;
+        }
+
+        .menu-btn {
+            font-size: 22px;
+            cursor: pointer;
+        }
+
+        nav {
+            display: none;
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            display: block;
+            padding: 12px 20px;
+            text-decoration: none;
+            color: var(--text);
+        }
+
+        nav a:hover {
+            background: var(--bg);
+        }
+
+        /* LAYOUT */
+        .container {
+            padding: 90px 20px 40px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        /* HEADINGS */
+        h1 {
+            color: var(--primary);
+            font-size: 26px;
+        }
+
+        h2 {
+            color: var(--highlight);
+            margin-bottom: 10px;
+        }
+
+        /* CARD */
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 16px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+            margin-bottom: 20px;
+        }
+
+        /* PRICE */
+        .price {
+            color: white;
+            background: var(--accent);
+            display: inline-block;
+            padding: 8px 15px;
+            border-radius: 10px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        /* BADGE */
+        .badge {
+            background: #fee2e2;
+            color: #b91c1c;
+            padding: 5px 10px;
+            border-radius: 8px;
+            font-size: 13px;
+            display: inline-block;
+            margin-top: 8px;
+        }
+
+        /* GALLERY */
+        .gallery img {
+            width: 100%;
+            border-radius: 12px;
+            margin-bottom: 12px;
+        }
+
+        /* VIDEO */
+        iframe {
+            width: 100%;
+            height: 220px;
+            border-radius: 12px;
+        }
+
+        .cta-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .cta {
+            text-align: center;
+            padding: 14px;
+            border-radius: 12px;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            display: block;
+            transition: all 0.2s ease;
+        }
+
+        /* Nút gọi */
+        .cta.call {
+            background: linear-gradient(135deg, #22c55e, #16a34a);
+            box-shadow: 0 6px 15px rgba(34, 197, 94, 0.3);
+        }
+
+        /* Nút Zalo */
+        .cta.zalo {
+            background: linear-gradient(135deg, #3b82f6, #2563eb);
+            box-shadow: 0 6px 15px rgba(59, 130, 246, 0.3);
+        }
+
+        /* Hover */
+        .cta:hover {
+            transform: translateY(-2px);
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            color: gray;
+        }
+
+        /* TOP BUTTON */
+        .top-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 12px 15px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: none;
+        }
+
+        @media(min-width:768px) {
+            iframe {
+                height: 400px;
+            }
         }
     </style>
     <script type="text/javascript">
@@ -34,11 +216,158 @@
 </head>
 
 <body>
-    <h1>Căn hộ 2PN - Quận 12 - View thoáng, sáng sủa</h1>
-    <p>Giá: 2.1 Tỷ (Có thương lượng)</p>
-    <img src="assets/images/vd-1.jpg" alt="Ảnh căn hộ"><br><br>
-    <img src="assets/images/vd-2.webp" alt="Ảnh căn hộ"><br><br>
-    <a href="https://zalo.me/09241412141412" class="btn">Liên hệ chính chủ qua Zalo</a>
+
+    <header>
+        <div><a href="/"><strong>🏡 Bán căn hộ</strong></a></div>
+        <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+        <nav id="menu">
+            <a href="#info" onclick="closeMenu()">Thông tin</a>
+            <a href="#desc" onclick="closeMenu()">Mô tả</a>
+            <a href="#images" onclick="closeMenu()">Hình ảnh</a>
+            <a href="#location" onclick="closeMenu()">Vị trí</a>
+            <a href="#contact" onclick="closeMenu()">Liên hệ</a>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <!-- INFO -->
+        <section id="info">
+            <h1>🏢 Chung cư Võ Đình</h1>
+            <p>📍 p.Thới An, TP.HCM (Quận 12 cũ)</p>
+
+            <div class="price">💰 Giá: 2,xx tỷ (x nhỏ)</div>
+            <div class="badge">⚠️ Ưu tiên không vay ngân hàng</div>
+
+            <div class="card">
+                <h2>📐 Kết cấu</h2>
+                <p>🛏️ 2 phòng ngủ</p>
+                <p>🚿 2 WC</p>
+                <p>📏 52m²</p>
+                <p>🌇 View hướng Tây</p>
+                <p>🧺 Logia cho máy giặt sấy</p>
+            </div>
+            <div class="gallery">
+                <img src="assets/images/hero.jpg">
+            </div>
+        </section>
+
+        <!-- DESCRIPTION -->
+        <section id="desc">
+            <h2>📝 Tin rao</h2>
+            <div class="card">
+                <p>
+                    Tôi chính chủ cần bán căn hộ Võ Đình, p.Thới An, TPHCM (Quận 12 cũ)
+                    <br><br>Tầng trung, nội thất cơ bản dính tường, 2 máy lạnh, 2 tủ quần áo.
+                    <br><br>
+                    💰 Giá: 2,xx tỷ (x nhỏ) - Giá tốt cho 1 căn hộ nhỏ nhưng đầy đủ công năng
+                    và ĐẶC BIỆT:<strong> view thoáng, ánh sáng tự nhiên chan hoà cho cả 2 phòng ngủ
+                        và 1 phòng khách.</strong>
+                    <br><br>
+                    Gia đình tôi đã có chỗ ở mới nên cần bán nhanh cho người có thiện chí.
+                </p>
+                <br>
+                <p>
+                    🌳 View đường Lê Văn Khương rộng, thoáng<br>
+                    🛒 Gần CoopFood, Bách Hoá Xanh, MM Market
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>🔥 Vì sao nên mua?</h2>
+                <p>
+                    ✔️ Ánh sáng tự nhiên tràn ngập<br>
+                    ✔️ View thoáng hiếm trong tầm giá<br>
+                    ✔️ Mã căn hộ thuộc nhóm căn đẹp của Toà nhà
+                </p>
+                <br>
+                <p>
+                    🎁 Có thể tặng thêm nội thất có sẵn<br>
+                    💬 Có thể thương lượng cho người thiện chí
+                </p>
+            </div>
+        </section>
+
+        <!-- IMAGES -->
+        <section id="images">
+            <h2>📸 Hình ảnh thực tế</h2>
+            <div class="gallery">
+                <img src="assets/images/pk-1.png">
+                <img src="assets/images/pn1-2.png">
+                <img src="assets/images/pn1-1.png">
+                <img src="assets/images/pb-1.jpg">
+                <img src="assets/images/toilet-1.jpg">
+            </div>
+
+            <h2>🎬 Video</h2>
+            <iframe src="https://www.youtube.com/embed/c3K5SfjwtdU" title="Video căn hộ" frameborder="0"
+                allowfullscreen>
+            </iframe>
+        </section>
+
+        <!-- LOCATION -->
+        <section id="location">
+            <h2>📍 Vị trí</h2>
+            <div class="card">
+                <p>🚶 5 phút → siêu thị, chợ</p>
+                <p>🏫 5 phút → trường học</p>
+                <p>🏥 7 phút → bệnh viện</p>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact">
+            <h2>📞 Liên hệ</h2>
+            <div class="card">
+                <p><strong>👩 Chính chủ:</strong> Thu Phong (nữ: 51 tuổi)</p>
+                <p>📱 ĐT/Zalo: 093 bảy năm 08123</p>
+                <p>⏰ Xem nhà: 16h - 18h mỗi ngày</p>
+                <p>👉 Liên hệ trước để đặt lịch xem nhà</p>
+                <br>
+
+                <div class="cta-group">
+                    <a href="tel:0937508123" class="cta call">📞 Gọi ngay</a>
+                    <a href="https://zalo.me/0937508123" target="_blank" class="cta zalo">💬 Chat Zalo</a>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        💖 Chính chủ bán căn hộ Võ Đình, p.Thới An, TPHCM. ©️ 2026
+    </footer>
+
+    <button class="top-btn" id="topBtn" onclick="scrollTopPage()">↑</button>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("menu");
+            menu.style.display = menu.style.display === "block" ? "none" : "block";
+        }
+
+        window.onscroll = function () {
+            const btn = document.getElementById("topBtn");
+            btn.style.display = document.documentElement.scrollTop > 200 ? "block" : "none";
+        }
+
+        function scrollTopPage() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("menu");
+            menu.style.display = menu.style.display === "block" ? "none" : "block";
+        }
+
+        function closeMenu() {
+            const menu = document.getElementById("menu");
+            menu.style.display = "none";
+        }
+    </script>
+
 </body>
 
 </html>
