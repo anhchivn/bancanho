@@ -2,375 +2,1113 @@
 <html lang="vi">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Bán căn hộ Võ Đình, p.Thới An, TP.HCM (Quận 12 cũ) - Chính chủ">
-    <meta property="og:description"
-        content="💰 Giá: 2,xx tỷ (x nhỏ) - Giá tốt cho 1 căn hộ nhỏ nhưng đầy đủ công năng và ĐẶC BIỆT: view thoáng, ánh sáng tự nhiên chan hoà cho cả 2 phòng ngủ và 1 phòng khách.">
-    <meta property="og:image" content="https://vodinh.site/assets/images/hero.jpg">
-    <meta property="og:url" content="https://vodinh.site">
-    <meta property="og:type" content="website">
-    <title>Bán căn hộ Võ Đình, p.Thới An, TPHCM - Chính chủ bán</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Bán căn hộ Võ Đình, p.Thới An, TP.HCM (Quận 12 cũ) - Chính chủ">
+  <meta property="og:description"
+    content="💰 Giá: 2,xx tỷ - Căn hộ 2PN 2WC view thoáng, ánh sáng tự nhiên chan hoà. Chính chủ bán.">
+  <meta property="og:image" content="https://vodinh.site/assets/images/pk-1.png">
+  <meta property="og:url" content="https://vodinh.site">
+  <meta property="og:type" content="website">
+  <title>Bán căn hộ Võ Đình, p.Thới An, TPHCM - Chính chủ bán</title>
 
-    <style>
-        :root {
-            --primary: #0f172a;
-            --accent: #22c55e;
-            --highlight: #f97316;
-            --bg: #f1f5f9;
-            --text: #1e293b;
-        }
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet">
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-        }
+  <style>
+    :root {
+      --cream: #f5f0e8;
+      --warm-white: #faf8f4;
+      --charcoal: #1a1a1a;
+      --stone: #8c8070;
+      --gold: #c9a84c;
+      --gold-light: #e8d5a0;
+      --green: #3d6b4f;
+      --green-light: #eef4f0;
+      --red-soft: #e8d5d5;
+      --red-dark: #8b2e2e;
+    }
 
-        body {
-            background: var(--bg);
-            color: var(--text);
-            line-height: 1.6;
-        }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        /* HEADER */
-        header {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background: white;
-            padding: 12px 20px;
-            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
-            z-index: 999;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+    html {
+      scroll-behavior: smooth;
+    }
 
-        header a {
-            text-decoration: none;
-            color: inherit;
-        }
+    body {
+      background: var(--cream);
+      color: var(--charcoal);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      line-height: 1.7;
+    }
 
-        header a:hover {
-            opacity: 0.7;
-        }
+    /* ─── HEADER ─── */
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 999;
+      background: rgba(245, 240, 232, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(201, 168, 76, 0.2);
+      padding: 14px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-        .menu-btn {
-            font-size: 22px;
-            cursor: pointer;
-        }
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--charcoal);
+      text-decoration: none;
+      letter-spacing: 0.5px;
+    }
 
-        nav {
-            display: none;
-            position: absolute;
-            top: 60px;
-            right: 20px;
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-        }
+    .logo span {
+      color: var(--gold);
+    }
 
-        nav a {
-            display: block;
-            padding: 12px 20px;
-            text-decoration: none;
-            color: var(--text);
-        }
+    .nav-links {
+      display: none;
+      gap: 28px;
+    }
 
-        nav a:hover {
-            background: var(--bg);
-        }
+    .nav-links a {
+      text-decoration: none;
+      color: var(--stone);
+      font-size: 13px;
+      font-weight: 400;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
 
-        /* LAYOUT */
-        .container {
-            padding: 90px 20px 40px;
-            max-width: 900px;
-            margin: auto;
-        }
+    .nav-links a:hover {
+      color: var(--gold);
+    }
 
-        section {
-            margin-bottom: 50px;
-        }
+    .menu-btn {
+      font-size: 22px;
+      cursor: pointer;
+      color: var(--charcoal);
+    }
 
-        /* HEADINGS */
-        h1 {
-            color: var(--primary);
-            font-size: 26px;
-        }
+    .mobile-nav {
+      display: none;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      left: 0;
+      background: var(--warm-white);
+      border-bottom: 1px solid rgba(201, 168, 76, 0.2);
+      padding: 10px 0;
+      text-align: center;
+    }
 
-        h2 {
-            color: var(--highlight);
-            margin-bottom: 10px;
-        }
+    .mobile-nav a {
+      display: block;
+      padding: 12px 20px;
+      text-decoration: none;
+      color: var(--charcoal);
+      font-size: 13px;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+    }
 
-        /* CARD */
-        .card {
-            background: white;
-            padding: 20px;
-            border-radius: 16px;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
-            margin-bottom: 20px;
-        }
+    @media(min-width: 768px) {
+      .nav-links {
+        display: flex;
+      }
 
-        /* PRICE */
-        .price {
-            color: white;
-            background: var(--accent);
-            display: inline-block;
-            padding: 8px 15px;
-            border-radius: 10px;
-            margin-top: 10px;
-            font-weight: bold;
-        }
+      .menu-btn {
+        display: none;
+      }
+    }
 
-        /* BADGE */
-        .badge {
-            background: #fee2e2;
-            color: #b91c1c;
-            padding: 5px 10px;
-            border-radius: 8px;
-            font-size: 13px;
-            display: inline-block;
-            margin-top: 8px;
-        }
+    /* ─── HERO ─── */
+    .hero {
+      margin-top: 60px;
+      position: relative;
+      height: calc(100vh - 60px);
+      min-height: 520px;
+      max-height: 800px;
+      overflow: hidden;
+      display: flex;
+      align-items: flex-end;
+    }
 
-        /* GALLERY */
-        .gallery img {
-            width: 100%;
-            border-radius: 12px;
-            margin-bottom: 12px;
-        }
+    .hero img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
 
-        /* VIDEO */
-        iframe {
-            width: 100%;
-            height: 220px;
-            border-radius: 12px;
-        }
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top,
+          rgba(26, 26, 26, 0.82) 0%,
+          rgba(26, 26, 26, 0.3) 50%,
+          rgba(26, 26, 26, 0.05) 100%);
+    }
 
-        .cta-group {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 40px 28px;
+      width: 100%;
+      animation: fadeUp 1s ease both;
+    }
 
-        .cta {
-            text-align: center;
-            padding: 14px;
-            border-radius: 12px;
-            font-weight: bold;
-            text-decoration: none;
-            color: white;
-            display: block;
-            transition: all 0.2s ease;
-        }
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
 
-        /* Nút gọi */
-        .cta.call {
-            background: linear-gradient(135deg, #22c55e, #16a34a);
-            box-shadow: 0 6px 15px rgba(34, 197, 94, 0.3);
-        }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
 
-        /* Nút Zalo */
-        .cta.zalo {
-            background: linear-gradient(135deg, #3b82f6, #2563eb);
-            box-shadow: 0 6px 15px rgba(59, 130, 246, 0.3);
-        }
+    .hero-tag {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--charcoal);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 2px;
+      margin-bottom: 14px;
+    }
 
-        /* Hover */
-        .cta:hover {
-            transform: translateY(-2px);
-        }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(28px, 6vw, 52px);
+      font-weight: 900;
+      color: white;
+      line-height: 1.2;
+      margin-bottom: 10px;
+    }
 
-        /* FOOTER */
-        footer {
-            text-align: center;
-            padding: 20px;
-            font-size: 14px;
-            color: gray;
-        }
+    .hero-sub {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 15px;
+      margin-bottom: 24px;
+    }
 
-        /* TOP BUTTON */
-        .top-btn {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: var(--primary);
-            color: white;
-            border: none;
-            padding: 12px 15px;
-            border-radius: 50%;
-            cursor: pointer;
-            display: none;
-        }
+    .hero-price {
+      display: inline-block;
+      background: rgba(201, 168, 76, 0.15);
+      border: 1px solid var(--gold);
+      color: var(--gold-light);
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      font-weight: 700;
+      padding: 10px 24px;
+      border-radius: 4px;
+      backdrop-filter: blur(8px);
+    }
 
-        @media(min-width:768px) {
-            iframe {
-                height: 400px;
-            }
-        }
-    </style>
-    <script type="text/javascript">
-        (function (c, l, a, r, i, t, y) {
-            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
-            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
-            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-        })(window, document, "clarity", "script", "wcypggrerq");
-    </script>
+    .hero-scroll {
+      position: absolute;
+      bottom: 28px;
+      right: 28px;
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      writing-mode: vertical-rl;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .hero-scroll::before {
+      content: '';
+      display: block;
+      width: 1px;
+      height: 40px;
+      background: rgba(255, 255, 255, 0.3);
+      animation: scrollLine 2s ease infinite;
+    }
+
+    @keyframes scrollLine {
+      0% {
+        transform: scaleY(0);
+        transform-origin: top;
+      }
+
+      50% {
+        transform: scaleY(1);
+        transform-origin: top;
+      }
+
+      51% {
+        transform: scaleY(1);
+        transform-origin: bottom;
+      }
+
+      100% {
+        transform: scaleY(0);
+        transform-origin: bottom;
+      }
+    }
+
+    /* ─── LAYOUT ─── */
+    .container {
+      max-width: 860px;
+      margin: auto;
+      padding: 0 20px;
+    }
+
+    section {
+      padding: 64px 0;
+    }
+
+    .section-label {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section-label::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--gold-light);
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(22px, 4vw, 34px);
+      font-weight: 700;
+      color: var(--charcoal);
+      margin-bottom: 28px;
+      line-height: 1.3;
+    }
+
+    /* ─── SPECS GRID ─── */
+    .specs-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+      margin-bottom: 24px;
+    }
+
+    @media(min-width: 600px) {
+      .specs-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .spec-item {
+      background: var(--warm-white);
+      border: 1px solid rgba(201, 168, 76, 0.15);
+      border-radius: 10px;
+      padding: 18px 16px;
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .spec-item:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+    }
+
+    .spec-icon {
+      font-size: 26px;
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    .spec-value {
+      font-family: 'Playfair Display', serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--charcoal);
+      display: block;
+    }
+
+    .spec-label {
+      font-size: 11px;
+      color: var(--stone);
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    /* ─── NOTE BADGE ─── */
+    .note-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--red-soft);
+      border-left: 3px solid var(--red-dark);
+      color: var(--red-dark);
+      padding: 10px 16px;
+      border-radius: 0 8px 8px 0;
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    /* ─── DIVIDER ─── */
+    .divider {
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--gold-light), transparent);
+      margin: 0;
+    }
+
+    /* ─── CARD ─── */
+    .card {
+      background: var(--warm-white);
+      border: 1px solid rgba(201, 168, 76, 0.12);
+      border-radius: 14px;
+      padding: 28px 24px;
+      margin-bottom: 16px;
+    }
+
+    /* ─── DESCRIPTION ─── */
+    .desc-text {
+      color: #444;
+      font-size: 15.5px;
+      line-height: 1.8;
+    }
+
+    .desc-highlight {
+      background: linear-gradient(120deg, var(--gold-light) 0%, transparent 100%);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-weight: 500;
+      color: var(--charcoal);
+    }
+
+    /* ─── WHY BUY ─── */
+    .why-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .why-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 15px;
+      color: #333;
+    }
+
+    .why-check {
+      width: 22px;
+      height: 22px;
+      background: var(--green);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .why-check svg {
+      width: 12px;
+      height: 12px;
+      stroke: white;
+      fill: none;
+      stroke-width: 2.5;
+    }
+
+    /* ─── NEARBY ─── */
+    .nearby-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    @media(min-width: 600px) {
+      .nearby-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .nearby-item {
+      background: var(--green-light);
+      border: 1px solid rgba(61, 107, 79, 0.15);
+      border-radius: 10px;
+      padding: 16px 14px;
+      text-align: center;
+    }
+
+    .nearby-icon {
+      font-size: 24px;
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    .nearby-time {
+      font-family: 'Playfair Display', serif;
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--green);
+      display: block;
+    }
+
+    .nearby-name {
+      font-size: 12px;
+      color: var(--stone);
+    }
+
+    /* ─── GALLERY ─── */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .gallery-grid .main-img {
+      grid-column: 1 / -1;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+      aspect-ratio: 4/3;
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+
+    .gallery-grid .main-img img {
+      aspect-ratio: 16/9;
+    }
+
+    .gallery-grid img:hover {
+      transform: scale(1.02);
+    }
+
+    /* ─── VIDEO ─── */
+    .video-wrap {
+      border-radius: 14px;
+      overflow: hidden;
+      margin-top: 24px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+    }
+
+    .video-wrap iframe {
+      width: 100%;
+      height: 220px;
+      border: none;
+      display: block;
+    }
+
+    @media(min-width: 768px) {
+      .video-wrap iframe {
+        height: 420px;
+      }
+    }
+
+    /* ─── MAP EMBED ─── */
+    .map-wrap {
+      border-radius: 14px;
+      overflow: hidden;
+      margin-top: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    .map-wrap iframe {
+      width: 100%;
+      height: 260px;
+      border: none;
+      display: block;
+    }
+
+    /* ─── CONTACT ─── */
+    .contact-card {
+      background: var(--charcoal);
+      color: white;
+      border-radius: 20px;
+      padding: 36px 28px;
+      text-align: center;
+    }
+
+    .contact-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 26px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .contact-role {
+      color: var(--gold);
+      font-size: 12px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 28px;
+    }
+
+    .contact-info p {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 15px;
+    }
+
+    .contact-info strong {
+      color: white;
+      font-weight: 500;
+    }
+
+    .cta-group {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    @media(min-width: 480px) {
+      .cta-group {
+        flex-direction: row;
+      }
+    }
+
+    .cta {
+      flex: 1;
+      text-align: center;
+      padding: 16px 20px;
+      border-radius: 10px;
+      font-weight: 500;
+      font-size: 15px;
+      text-decoration: none;
+      color: white;
+      display: block;
+      transition: all 0.25s;
+      letter-spacing: 0.3px;
+    }
+
+    .cta.call {
+      background: linear-gradient(135deg, #3d6b4f, #2d5440);
+      box-shadow: 0 6px 20px rgba(61, 107, 79, 0.4);
+    }
+
+    .cta.zalo {
+      background: linear-gradient(135deg, #1a6ed8, #1258b8);
+      box-shadow: 0 6px 20px rgba(26, 110, 216, 0.4);
+    }
+
+    .cta:hover {
+      transform: translateY(-2px);
+      filter: brightness(1.1);
+    }
+
+    .viewing-hours {
+      margin-top: 20px;
+      padding: 14px;
+      background: rgba(201, 168, 76, 0.12);
+      border: 1px solid rgba(201, 168, 76, 0.3);
+      border-radius: 8px;
+      color: var(--gold-light);
+      font-size: 13px;
+    }
+
+    /* ─── FOOTER ─── */
+    footer {
+      text-align: center;
+      padding: 32px 20px;
+      background: var(--charcoal);
+      color: rgba(255, 255, 255, 0.35);
+      font-size: 13px;
+      letter-spacing: 0.5px;
+    }
+
+    footer span {
+      color: var(--gold);
+    }
+
+    /* ─── BACK TO TOP ─── */
+    .top-btn {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: var(--gold);
+      color: var(--charcoal);
+      border: none;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      font-size: 18px;
+      cursor: pointer;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 20px rgba(201, 168, 76, 0.4);
+      transition: transform 0.2s;
+      z-index: 998;
+    }
+
+    .top-btn:hover {
+      transform: translateY(-3px);
+    }
+
+    /* ─── LIGHTBOX ─── */
+    .lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      background: rgba(0, 0, 0, 0.92);
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      cursor: zoom-out;
+    }
+
+    .lightbox.active {
+      display: flex;
+    }
+
+    .lightbox img {
+      max-width: 100%;
+      max-height: 90vh;
+      border-radius: 8px;
+      object-fit: contain;
+      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
+      animation: lbIn 0.25s ease;
+    }
+
+    @keyframes lbIn {
+      from {
+        opacity: 0;
+        transform: scale(0.93);
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .lb-close {
+      position: fixed;
+      top: 18px;
+      right: 22px;
+      color: white;
+      font-size: 32px;
+      cursor: pointer;
+      line-height: 1;
+      opacity: 0.7;
+      transition: opacity 0.2s;
+    }
+
+    .lb-close:hover {
+      opacity: 1;
+    }
+
+    .lb-nav {
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      color: white;
+      font-size: 36px;
+      cursor: pointer;
+      opacity: 0.5;
+      transition: opacity 0.2s;
+      padding: 10px;
+      user-select: none;
+    }
+
+    .lb-nav:hover {
+      opacity: 1;
+    }
+
+    .lb-prev {
+      left: 10px;
+    }
+
+    .lb-next {
+      right: 10px;
+    }
+
+    .lb-counter {
+      position: fixed;
+      bottom: 18px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 13px;
+      letter-spacing: 1px;
+    }
+
+    /* ─── ANIMATIONS ─── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: none;
+    }
+  </style>
+
+  <script type="text/javascript">
+    (function (c, l, a, r, i, t, y) {
+      c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+      t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+      y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+    })(window, document, "clarity", "script", "wcypggrerq");
+  </script>
 </head>
 
 <body>
 
-    <header>
-        <div><a href="/"><strong>🏡 Bán căn hộ</strong></a></div>
-        <div class="menu-btn" onclick="toggleMenu()">☰</div>
-
-        <nav id="menu">
-            <a href="#info" onclick="closeMenu()">Thông tin</a>
-            <a href="#desc" onclick="closeMenu()">Mô tả</a>
-            <a href="#images" onclick="closeMenu()">Hình ảnh</a>
-            <a href="#location" onclick="closeMenu()">Vị trí</a>
-            <a href="#contact" onclick="closeMenu()">Liên hệ</a>
-        </nav>
-    </header>
-
-    <div class="container">
-
-        <!-- INFO -->
-        <section id="info">
-            <h1>🏢 Chung cư Võ Đình</h1>
-            <p>📍 p.Thới An, TP.HCM (Quận 12 cũ)</p>
-
-            <div class="price">💰 Giá: 2,xx tỷ (x nhỏ)</div>
-            <div class="badge">⚠️ Ưu tiên không vay ngân hàng</div>
-
-            <div class="card">
-                <h2>📐 Kết cấu</h2>
-                <p>🛏️ 2 phòng ngủ</p>
-                <p>🚿 2 WC</p>
-                <p>📏 52m²</p>
-                <p>🌇 View hướng Tây</p>
-                <p>🧺 Logia cho máy giặt sấy</p>
-            </div>
-            <div class="gallery">
-                <img src="assets/images/hero.jpg">
-            </div>
-        </section>
-
-        <!-- DESCRIPTION -->
-        <section id="desc">
-            <h2>📝 Tin rao</h2>
-            <div class="card">
-                <p>
-                    Tôi chính chủ cần bán căn hộ Võ Đình, p.Thới An, TPHCM (Quận 12 cũ)
-                    <br><br>Tầng trung, nội thất cơ bản dính tường, 2 máy lạnh, 2 tủ quần áo.
-                    <br><br>
-                    💰 Giá: 2,xx tỷ (x nhỏ) - Giá tốt cho 1 căn hộ nhỏ nhưng đầy đủ công năng
-                    và ĐẶC BIỆT:<strong> view thoáng, ánh sáng tự nhiên chan hoà cho cả 2 phòng ngủ
-                        và 1 phòng khách.</strong>
-                    <br><br>
-                    Gia đình tôi đã có chỗ ở mới nên cần bán nhanh cho người có thiện chí.
-                </p>
-                <br>
-                <p>
-                    🌳 View đường Lê Văn Khương rộng, thoáng<br>
-                    🛒 Gần CoopFood, Bách Hoá Xanh, MM Market
-                </p>
-            </div>
-
-            <div class="card">
-                <h2>🔥 Vì sao nên mua?</h2>
-                <p>
-                    ✔️ An ninh tốt, bảo vệ 24/7<br>
-                    ✔️ View thoáng, ánh sáng chan hoà <br>
-                </p>
-                <br>
-                <p>
-                    💬 Có thể thương lượng cho người thiện chí
-                </p>
-            </div>
-        </section>
-
-        <!-- IMAGES -->
-        <section id="images">
-            <h2>📸 Hình ảnh thực tế</h2>
-            <div class="gallery">
-                <img src="assets/images/pk-1.png">
-                <img src="assets/images/pn1-2.png">
-                <img src="assets/images/pn1-1.png">
-                <img src="assets/images/pb-1.jpg">
-                <img src="assets/images/toilet-1.jpg">
-            </div>
-
-            <h2>🎬 Video</h2>
-            <iframe src="https://www.youtube.com/embed/c3K5SfjwtdU" title="Video căn hộ" frameborder="0"
-                allowfullscreen>
-            </iframe>
-        </section>
-
-        <!-- LOCATION -->
-        <section id="location">
-            <h2>📍 Vị trí</h2>
-            <div class="card">
-                <p>🚶 5 phút → siêu thị, chợ</p>
-                <p>🏫 5 phút → trường học</p>
-                <p>🏥 7 phút → bệnh viện</p>
-            </div>
-        </section>
-
-        <!-- CONTACT -->
-        <section id="contact">
-            <h2>📞 Liên hệ</h2>
-            <div class="card">
-                <p><strong>👩 Chính chủ:</strong> Thu Phong (nữ: 51 tuổi)</p>
-                <p>📱 ĐT/Zalo: 093 bảy năm 08123</p>
-                <p>⏰ Xem nhà: 16h - 18h mỗi ngày</p>
-                <p>👉 Liên hệ trước để đặt lịch xem nhà</p>
-                <br>
-
-                <div class="cta-group">
-                    <a href="tel:0937508123" class="cta call">📞 Gọi ngay</a>
-                    <a href="https://zalo.me/0937508123" target="_blank" class="cta zalo">💬 Chat Zalo</a>
-                </div>
-            </div>
-        </section>
-
+  <!-- HEADER -->
+  <header>
+    <a href="/" class="logo">Chung cư<span> Võ Đình</span></a>
+    <nav class="nav-links">
+      <a href="#info">Tổng quan</a>
+      <a href="#desc">Chi tiết</a>
+      <a href="#images">Hình ảnh</a>
+      <a href="#location">Vị trí</a>
+      <a href="#contact">Liên hệ</a>
+    </nav>
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+    <div class="mobile-nav" id="menu">
+      <a href="#info" onclick="closeMenu()">Tổng quan</a>
+      <a href="#desc" onclick="closeMenu()">Chi tiết</a>
+      <a href="#images" onclick="closeMenu()">Hình ảnh</a>
+      <a href="#location" onclick="closeMenu()">Vị trí</a>
+      <a href="#contact" onclick="closeMenu()">Liên hệ</a>
     </div>
+  </header>
 
-    <footer>
-        💖 Chính chủ bán căn hộ Võ Đình, p.Thới An, TPHCM. ©️ 2026
-    </footer>
+  <!-- HERO -->
+  <div class="hero">
+    <img src="assets/images/pk-1.png" alt="Căn hộ Võ Đình">
+    <div class="hero-overlay"></div>
+    <div class="hero-content container">
+      <div class="hero-tag">Chính chủ bán · TP.HCM</div>
+      <h1>Căn hộ chung cư Võ Đình<br>p.Thới An (Q.12 cũ)</h1>
+      <p class="hero-sub">2 phòng ngủ · 2 WC · 52m² · View thoáng</p>
+      <div class="hero-price">💰 2,xx tỷ</div>
+    </div>
+    <div class="hero-scroll">Scroll</div>
+  </div>
 
-    <button class="top-btn" id="topBtn" onclick="scrollTopPage()">↑</button>
+  <div class="container">
 
-    <script>
-        function toggleMenu() {
-            const menu = document.getElementById("menu");
-            menu.style.display = menu.style.display === "block" ? "none" : "block";
+    <!-- INFO -->
+    <section id="info" class="reveal">
+      <div class="section-label">Tổng quan</div>
+      <h2 class="section-title">Kết cấu căn hộ</h2>
+
+      <div class="specs-grid">
+        <div class="spec-item">
+          <span class="spec-icon">🛏️</span>
+          <span class="spec-value">2</span>
+          <span class="spec-label">Phòng ngủ</span>
+        </div>
+        <div class="spec-item">
+          <span class="spec-icon">🚿</span>
+          <span class="spec-value">2</span>
+          <span class="spec-label">Phòng tắm</span>
+        </div>
+        <div class="spec-item">
+          <span class="spec-icon">📐</span>
+          <span class="spec-value">52m²</span>
+          <span class="spec-label">Diện tích</span>
+        </div>
+        <div class="spec-item">
+          <span class="spec-icon">🌇</span>
+          <span class="spec-value">Tây</span>
+          <span class="spec-label">Hướng view</span>
+        </div>
+        <div class="spec-item">
+          <span class="spec-icon">🏢</span>
+          <span class="spec-value">Trung</span>
+          <span class="spec-label">Tầng</span>
+        </div>
+        <div class="spec-item">
+          <span class="spec-icon">🧺</span>
+          <span class="spec-value">Có</span>
+          <span class="spec-label">Logia giặt sấy</span>
+        </div>
+      </div>
+
+      <div class="note-badge">
+        ⚠️ Ưu tiên khách không vay ngân hàng
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- DESCRIPTION -->
+    <section id="desc" class="reveal">
+      <div class="section-label">Chi tiết</div>
+      <h2 class="section-title">Mô tả căn hộ</h2>
+
+      <div class="card">
+        <p class="desc-text">
+          Chính chủ cần bán căn hộ Võ Đình, p.Thới An, TP.HCM (Q.12 cũ). Căn hộ ở tầng trung,
+          nội thất cơ bản, gọn gàng và sạch sẽ.
+          <br><br>
+          Điểm đặc biệt của căn này là <span class="desc-highlight">view đường Lê Văn Khương</span> —
+          thoáng đãng, ánh sáng tự nhiên tràn vào cả 2 phòng ngủ lẫn phòng khách.
+          Không khí trong lành, không bị che khuất.
+          <br><br>
+          Gần CoopFood, Bách Hoá Xanh, MM Market — đi chợ, mua sắm cực tiện.
+          Bán nhanh, giá tốt cho người có <span class="desc-highlight">thiện chí mua thực</span>.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3 style="font-family:'Playfair Display',serif; font-size:18px; margin-bottom:18px; color:var(--charcoal);">Vì
+          sao nên chọn căn này?</h3>
+        <ul class="why-list">
+          <li>
+            <span class="why-check"><svg viewBox="0 0 14 14">
+                <polyline points="2 7 6 11 12 3" />
+              </svg></span>
+            View thoáng — ánh sáng tự nhiên chan hoà cả ngày
+          </li>
+          <li>
+            <span class="why-check"><svg viewBox="0 0 14 14">
+                <polyline points="2 7 6 11 12 3" />
+              </svg></span>
+            Bảo vệ trực 24/7, an ninh khu vực tốt
+          </li>
+          <li>
+            <span class="why-check"><svg viewBox="0 0 14 14">
+                <polyline points="2 7 6 11 12 3" />
+              </svg></span>
+            Chỗ đậu xe thoải mái
+          </li>
+          <li>
+            <span class="why-check"><svg viewBox="0 0 14 14">
+                <polyline points="2 7 6 11 12 3" />
+              </svg></span>
+            Tiện ích xung quanh đầy đủ: siêu thị, trường học, bệnh viện
+          </li>
+          <li>
+            <span class="why-check"><svg viewBox="0 0 14 14">
+                <polyline points="2 7 6 11 12 3" />
+              </svg></span>
+            Chính chủ bán — đàm phán trực tiếp
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- IMAGES -->
+    <section id="images" class="reveal">
+      <div class="section-label">Hình ảnh</div>
+      <h2 class="section-title">Thực tế căn hộ</h2>
+
+      <div class="gallery-grid">
+        <div class="main-img"><img src="assets/images/pk-1.png" alt="Phòng khách" onclick="openLB(0)"
+            style="cursor:zoom-in"></div>
+        <img src="assets/images/pn1-2.png" alt="Phòng ngủ 1" onclick="openLB(1)" style="cursor:zoom-in">
+        <img src="assets/images/pn1-1.png" alt="Phòng ngủ 2" onclick="openLB(2)" style="cursor:zoom-in">
+        <img src="assets/images/pb-1.jpg" alt="Phòng bếp" onclick="openLB(3)" style="cursor:zoom-in">
+        <img src="assets/images/pn1-3.png" alt="Phòng bếp" onclick="openLB(4)" style="cursor:zoom-in">
+        <img src="assets/images/hero.jpg" alt="Phòng bếp" onclick="openLB(5)" style="cursor:zoom-in">
+        <img src="assets/images/toilet-1.jpg" alt="Toilet" onclick="openLB(6)" style="cursor:zoom-in">
+      </div>
+
+      <div class="video-wrap">
+        <iframe src="https://www.youtube.com/embed/c3K5SfjwtdU" title="Video tham quan căn hộ" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- LOCATION -->
+    <section id="location" class="reveal">
+      <div class="section-label">Vị trí</div>
+      <h2 class="section-title">Tiện ích xung quanh</h2>
+
+      <div class="nearby-grid">
+        <div class="nearby-item">
+          <span class="nearby-icon">🛒</span>
+          <span class="nearby-time">5 phút</span>
+          <span class="nearby-name">Siêu thị & chợ</span>
+        </div>
+        <div class="nearby-item">
+          <span class="nearby-icon">🏫</span>
+          <span class="nearby-time">5 phút</span>
+          <span class="nearby-name">Trường học</span>
+        </div>
+        <div class="nearby-item">
+          <span class="nearby-icon">🏥</span>
+          <span class="nearby-time">7 phút</span>
+          <span class="nearby-name">Bệnh viện</span>
+        </div>
+      </div>
+
+      <div class="map-wrap">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.1450772829653!2d106.64670950945755!3d10.880571757221691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d7bcea2d7ad1%3A0x49b218788716bbe1!2zQ2h1bmcgY8awIFbDtSDEkMOsbmggQXBhcnRtZW50!5e1!3m2!1svi!2s!4v1777731168691!5m2!1svi!2s"
+          allowfullscreen loading="lazy"></iframe>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- CONTACT -->
+    <section id="contact" class="reveal">
+      <div class="section-label">Liên hệ</div>
+      <h2 class="section-title">Gặp chính chủ</h2>
+
+      <div class="contact-card">
+        <div class="contact-name">Thu Phong (nữ)</div>
+        <div class="contact-role">Chủ căn hộ · Bán trực tiếp</div>
+
+        <div class="contact-info">
+          <p>📱 ĐT / Zalo: <strong>093 bảy năm 08123</strong></p>
+          <p>📍 Chung cư Võ Đình, p.Thới An, TP.HCM</p>
+        </div>
+
+        <div class="cta-group">
+          <a href="tel:0937508123" class="cta call">📞 Gọi ngay</a>
+          <a href="https://zalo.me/0937508123" target="_blank" class="cta zalo">💬 Chat Zalo</a>
+        </div>
+
+        <div class="viewing-hours">
+          🕓 Xem nhà: <strong>16h – 18h</strong> mỗi ngày &nbsp;·&nbsp; Vui lòng liên hệ trước
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <span>Căn hộ Võ Đình</span> · Chính chủ bán · © 2026
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" onclick="closeLB()">
+    <span class="lb-close" onclick="closeLB()">×</span>
+    <span class="lb-nav lb-prev" onclick="event.stopPropagation(); shiftLB(-1)">‹</span>
+    <img id="lb-img" src="" alt="">
+    <span class="lb-nav lb-next" onclick="event.stopPropagation(); shiftLB(1)">›</span>
+    <div class="lb-counter" id="lb-counter"></div>
+  </div>
+
+  <button class="top-btn" id="topBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+  <script>
+    const lbImages = [
+      'assets/images/pk-1.png',
+      'assets/images/pn1-2.png',
+      'assets/images/pn1-1.png',
+      'assets/images/pn1-3.png',
+      'assets/images/pb-1.jpg',
+      'assets/images/hero.jpg',
+      'assets/images/toilet-1.jpg'
+    ];
+    let lbIndex = 0;
+
+    function openLB(i) {
+      lbIndex = i;
+      updateLB();
+      document.getElementById('lightbox').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLB() {
+      document.getElementById('lightbox').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    function shiftLB(dir) {
+      lbIndex = (lbIndex + dir + lbImages.length) % lbImages.length;
+      updateLB();
+    }
+
+    function updateLB() {
+      const img = document.getElementById('lb-img');
+      img.style.animation = 'none';
+      img.offsetHeight; // reflow
+      img.style.animation = '';
+      img.src = lbImages[lbIndex];
+      document.getElementById('lb-counter').textContent = (lbIndex + 1) + ' / ' + lbImages.length;
+    }
+
+    document.addEventListener('keydown', e => {
+      if (!document.getElementById('lightbox').classList.contains('active')) return;
+      if (e.key === 'Escape') closeLB();
+      if (e.key === 'ArrowLeft') shiftLB(-1);
+      if (e.key === 'ArrowRight') shiftLB(1);
+    });
+
+    // Swipe support
+    let touchStartX = 0;
+    document.getElementById('lightbox').addEventListener('touchstart', e => {
+      touchStartX = e.touches[0].clientX;
+    }, { passive: true });
+
+    document.getElementById('lightbox').addEventListener('touchend', e => {
+      const diff = touchStartX - e.changedTouches[0].clientX;
+      if (Math.abs(diff) < 50) return; // bỏ qua nếu swipe quá ngắn
+      if (diff > 0) shiftLB(1);  // swipe trái → ảnh tiếp
+      else shiftLB(-1);           // swipe phải → ảnh trước
+    });
+
+    function toggleMenu() {
+      const m = document.getElementById("menu");
+      m.style.display = m.style.display === "block" ? "none" : "block";
+    }
+    function closeMenu() {
+      document.getElementById("menu").style.display = "none";
+    }
+
+    // Back to top
+    window.addEventListener('scroll', () => {
+      const btn = document.getElementById("topBtn");
+      btn.style.display = scrollY > 300 ? "flex" : "none";
+    });
+
+    // Scroll reveal
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          observer.unobserve(e.target);
         }
-
-        window.onscroll = function () {
-            const btn = document.getElementById("topBtn");
-            btn.style.display = document.documentElement.scrollTop > 200 ? "block" : "none";
-        }
-
-        function scrollTopPage() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-    </script>
-    <script>
-        function toggleMenu() {
-            const menu = document.getElementById("menu");
-            menu.style.display = menu.style.display === "block" ? "none" : "block";
-        }
-
-        function closeMenu() {
-            const menu = document.getElementById("menu");
-            menu.style.display = "none";
-        }
-    </script>
+      });
+    }, { threshold: 0.12 });
+    reveals.forEach(el => observer.observe(el));
+  </script>
 
 </body>
 
